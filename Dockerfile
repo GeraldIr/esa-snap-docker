@@ -1,4 +1,5 @@
-FROM ubuntu:24.04
+FROM python:3.12-slim
+RUN pip install --no-cache notebook jupyterlab jupyterhub
 
 ENV DEBIAN_FRONTEND=noninteractive \
     LC_ALL=C.UTF-8 \
